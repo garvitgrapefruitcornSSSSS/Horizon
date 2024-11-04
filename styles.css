@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F4F5F7;
+    /* Neutral Background */
+    color: #0D1B2A;
+    /* Deep Indigo Text */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 1rem;
+    /* Reduced padding for a smaller navbar */
+    background-color: #fbfbfd;
+    /* Primary Deep Indigo */
+    color: #fcfbfe;
+    position: sticky;
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #31274a;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    font-family: "Playfair Display", serif;
+    padding-bottom: 22px;
+}
+
+.slogan {
+    font-size: 0.7rem;
+    color: #3a2e55;
+    /* Highlight: Soft Gold */
+    position: relative;
+    top: 15px;
+    right: 90px;
+    white-space: nowrap;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    font-family: "Fjalla One", sans-serif;
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3a2e55;
+    /* Accent: Turquoise */
+}
+
+.nav-links {
+
+    display: flex;
+    list-style: none;
+    margin-right: auto;
+    /* This pushes the nav links to the left */
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.signin-btn {
+    color: #0b0b0b;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    /* Shifts button slightly to the right */
+    border: 1px solid #0b0b0b;
+    /* Adds a thinner border */
+    border-radius: 15px;
+    /* Adjusts border-radius if needed */
+    font-weight: bold;
+    /* Makes text bold */
+    transition: background-color 0.3s;
+}
+
+
+.signin-btn:hover {
+    background-color: #3a2e55;
+    /* Accent: Bright Cyan */
+}
+
+
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align items to the start of the flex container */
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    background-image: url(background.jpg);
+    background-color: #191023;
+    /* Fallback color */
+    background-size: cover;
+    background-position: center;
+    color: #f4e9e9;
+    width: 100%;
+    height: 600px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    /* Optional text shadow */
+}
+
+.banner-logo {
+
+    width: 30px;
+    height: auto;
+    position: relative;
+    bottom: 180px;
+    margin-left: 10px;
+}
+
+.banner h1 {
+    display: inline-block;
+    /* Keeps heading inline */
+    max-width: 400px;
+    margin: 0;
+    /* Reset margin */
+    margin-left: 20px;
+    /* Slight margin from the left */
+    margin-bottom: 200px;
+    /* Adjust this value as needed */
+    line-height: 1.4;
+    text-align: left;
+    position: relative;
+    margin-top: 120px;
+
+}
+
+@media (max-width: 600px) {
+    .banner {
+        padding: 2rem 1rem;
+        font-size: 1rem;
+
+    }
+
+    .banner h1 {
+        max-width: 100%;
+        text-align: center;
+        /* Center-align on small screens */
+        margin-left: 0;
+        /* Reset left margin for small screens */
+        margin-right: 0;
+        /* Reset right margin for small screens */
+
+    }
+}
+
+
+
+
+
+
+
+.learn-more-btn {
+    padding: 0.8rem;
+    background-color: #FFB300;
+    /* Highlight: Soft Gold */
+    color: #0D1B2A;
+    /* Text color */
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #FFD700;
+}
+
+.card {
+    width: 1920px;
+    height: 1800px;
+    padding: none;
+    margin: none;
+    object-fit: cover;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2ECFD;
+    /* Your background color */
+}
+
+.my-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 30px;
+    background-color: #D6B7F5;
+    /* Background color for the page */
+    font-family: Arial, sans-serif;
+    color: #F2ECFD;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.mypagecontainer {
+    display: flex;
+    gap: 40px;
+    /* Space between card container and carousel */
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Flip Card Styling */
+.card-container {
+    display: flex;
+    gap: 45px;
+    /* Space between the two cards */
+    width: 600px;
+    /* Adjust width to control space taken by the card container */
+    margin-left: 50px;
+    /* Ensures it's aligned left */
+    margin-right: auto;
+}
+
+.flip-card {
+    perspective: 1000px;
+    flex: 1;
+    /* Ensures each card takes equal space within the container */
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.flip-card-front {
+    background-color: #43165C;
+    color: #F2ECFD;
+}
+
+.flip-card-back {
+    background-color: #F2ECFD;
+    color: #232222;
+    transform: rotateY(180deg);
+}
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    width: 400px;
+    /* Carousel width */
+    height: 600px;
+    /* CSarousel height */
+    overflow: hidden;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.carousel img {
+    width: 100%;
+    /* Image width matches carousel */
+    height: 100%;
+    /* Image height matches carousel */
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+    /* Hide all images initially */
+    transition: transform 0.3s ease;
+}
+
+.img1 {
+    width: 350px;
+    height: 450px;
+}
+
+.img2 {
+    width: 350px;
+    height: 450px;
+}
+
+.img3 {
+    width: 400px;
+    height: 500px;
+}
+
+.img4 {
+    width: 450px;
+    height: 550px;
+}
+
+.carousel img.active {
+    display: block;
+    /* Only display the active image */
+    transform: scale(1.05);
+    /* Slight enlargement on activation */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dots {
+    position: absolute;
+    bottom: 15px;
+    /* Position below the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #f9f6f6;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.dot:hover {
+    opacity: 1;
+}
+
+.dot.active {
+    background-color: #d7d429;
+    opacity: 1;
+}
+
+
